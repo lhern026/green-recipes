@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const usersCtrl = require('../../controllers/api/users');
+const recipesCtrl = require('../../controllers/api/recipes');
 
 const ensureLoggedIn = require('../../config/ensureLoggedIn');
 

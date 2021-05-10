@@ -14,6 +14,16 @@ const recipeSchema = new Schema({
     timestamps: true
   });
 
+const commentSchema = new Schema({
+  comment: String,
+  user: {type: Schema.Types.ObjectId, ref: 'User'},
+  userName: String,
+  
+    
+  }, {
+    timestamps: true
+  });
+
 
 
 module.exports = mongoose.model('Recipe', recipeSchema);
