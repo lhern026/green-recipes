@@ -20,7 +20,7 @@ export default function App() {
           <NavBar user={user} setUser={setUser} />
           
           <Switch>
-            <Route path="/orders/new">
+            <Route path="/recipes/new">
               <NewRecipePage />
             </Route>
             <Route path="/recipes">

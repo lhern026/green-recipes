@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import SignUpForm from '../../components/SignUpForm/SignUpForm';
 import LoginForm from '../../components/LoginForm/LoginForm';
-
+import './LandingPage.css';
 export default function LandingPage({ setUser }) {
   const [showLogin, setShowLogin] = useState(true);
 
   return (
-    <main>
+    <main className="landing">
 
       <h1>Green recipes</h1>
       <p>this is my landing page</p>
