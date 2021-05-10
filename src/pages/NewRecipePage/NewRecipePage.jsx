@@ -1,3 +1,9 @@
+import RecipeForm from '../../components/RecipeForm/RecipeForm';
+
 export default function NewRecipePage() {
-  return <h1>NewRecipePage</h1>
+  return(
+    <>
+    <br /><br /><br /><br /><br /><br /><br />
+    <RecipeForm  />
+</>)
 }
