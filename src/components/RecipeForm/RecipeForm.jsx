@@ -2,7 +2,8 @@ import { useEffect, useState } from "react"
 
 
 export default function RecipeForm({handleAddRecipe}){
-    const [input,setInput] = useState({
+    
+     const [input,setInput] = useState({
         recipe:'',
         ingredients: '',
         instructions:'',
@@ -15,7 +16,7 @@ export default function RecipeForm({handleAddRecipe}){
     async function handleSubmit(evt) {
         // Prevent form from being submitted to the server
         evt.preventDefault();
-        handleAddInput(input);
+        handleAddRecipe(input);
         
       }
     return(

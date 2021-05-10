@@ -12,6 +12,13 @@ import NewRecipePage from '../NewRecipePage/NewRecipePage';
 
 export default function App() {
   const [user, setUser] = useState(getUser());
+  const [input,setInput] = useState({
+    recipe:'',
+    ingredients: '',
+    instructions:'',
+    duration:''
+})
+const [recipes,setRecipes]=useState([]);
   
   return (
     <main className="App">
@@ -21,17 +28,17 @@ export default function App() {
           
           <Switch>
             <Route path="/recipes/new">
-              <NewRecipePage />
+              <NewRecipePage input={input} setInput={setInput}/>
             </Route>
             <Route path="/recipes">
-              <RecipePage/>
+              <RecipePage recipes={recipes} setRecipes={setRecipes}/>
             </Route>
             
             <Redirect to="/recipes" />
           </Switch>
         </>
         :
-        <LandingPage setUser={setUser}   />
+        <LandingPage setUser={setUser} user={user}  />
       }
     </main>
   );

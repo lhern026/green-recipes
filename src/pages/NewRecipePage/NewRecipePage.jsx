@@ -1,9 +1,9 @@
 import RecipeForm from '../../components/RecipeForm/RecipeForm';
 
-export default function NewRecipePage() {
+export default function NewRecipePage({input}) {
   return(
     <>
     <br /><br /><br /><br /><br /><br /><br />
-    <RecipeForm  />
+    <RecipeForm input={input} />
 </>)
 }
