@@ -1,12 +1,14 @@
 import { useState } from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import { getUser } from '../../utilities/users-service';
-import AuthPage from '../LandingPage/LandingPage';
+
 import LandingPage from '../LandingPage/LandingPage';
-import NewOrderPage from '../NewOrderPage/NewOrderPage';
-import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage';
+
+
 import NavBar from '../../components/NavBar/NavBar';
 import './App.css';
+import RecipePage from '../RecipePage/RecipePage';
+import NewRecipePage from '../NewRecipePage/NewRecipePage';
 
 export default function App() {
   const [user, setUser] = useState(getUser());
@@ -19,13 +21,13 @@ export default function App() {
           
           <Switch>
             <Route path="/orders/new">
-              <NewOrderPage />
+              <NewRecipePage />
             </Route>
-            <Route path="/orders">
-              <OrderHistoryPage />
+            <Route path="/recipes">
+              <RecipePage/>
             </Route>
             
-            <Redirect to="/orders" />
+            <Redirect to="/recipes" />
           </Switch>
         </>
         :
