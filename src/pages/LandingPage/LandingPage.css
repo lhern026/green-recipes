@@ -1,8 +1,8 @@
-.landing {
-  background: url(https://i.imgur.com/rA8YaKD.jpg) no-repeat center center fixed;
-  background-color: hotpink;
-  background-size: cover;
-}
 p {
   color: black;
+}
+.cont1 {
+  background-color: red;
+  height: 30vh;
+  padding: 10%;
 }

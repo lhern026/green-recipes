@@ -8,7 +8,7 @@ const recipeSchema = new Schema({
     ingredients: { type: String, required: true },
     instructions: { type: String, required: true },
     duration: {type: Number},
-    
+    comments: [commentSchema]
     
     
   }, {

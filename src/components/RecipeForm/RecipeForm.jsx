@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
+import { sendRecipe} from "../../utilities/recipes-service";
 
 
 export default function RecipeForm({handleAddRecipe}){
@@ -15,8 +16,18 @@ export default function RecipeForm({handleAddRecipe}){
     }
     async function handleSubmit(evt) {
         // Prevent form from being submitted to the server
+        
         evt.preventDefault();
-        handleAddRecipe(input);
+        
+        try{
+            const formData = {...input}
+            
+            const recipe = await sendRecipe(formData)
+            console.log(recipe);
+
+        } catch{
+
+        }
         
       }
     return(
