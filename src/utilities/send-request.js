@@ -1,12 +1,23 @@
+import { getToken } from "./users-service";
 
-// export async function sendRequest(formData) {
-//     try {
-//       // Delegate the network request code to the users-api.js API module
-//       // which will ultimately return a JSON Web Token (JWT)
-//     //   const token = await usersAPI.signUp(userData);
-//       // Baby step by returning whatever is sent back by the server
-//     //   return token;
-//     } catch {
-//       throw new Error('Invalid Sign Up');
-//     }
-//   }
+export default async function sendRequest(url, method = 'GET', payload = null) {
+  // Fetch accepts an options object as the 2nd argument
+  // used to include a data payload, set headers, etc. 
+  const options = { method };
+  if (payload) {
+    options.headers = { 'Content-Type': 'application/json' };
+    options.body = JSON.stringify(payload);
+  }
+  const token = getToken();
+  if (token) {
+    // ensure the headers object exists
+    options.headers = options.headers || {};
+    // Add token to an Authorization header
+    // Prefacing with 'Bearer' is recommended in the HTTP specification
+    options.headers.Authorization = `Bearer ${token}`;
+  }
+  const res = await fetch(url, options);
+  // res.ok will be false if the status code set to 4xx in the controller action
+  if (res.ok) return res.json();
+  throw new Error('Bad Request');
+}

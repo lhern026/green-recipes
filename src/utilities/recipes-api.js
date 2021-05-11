@@ -8,7 +8,7 @@ export async function sendRecipe(formData) {
     headers: { 'Content-Type': 'application/json' },
     // Fetch requires data payloads to be stringified
     // and assigned to a body property on the options object
-    body: JSON.stringify(userData)
+    body: JSON.stringify(formData)
   });
   // Check if request was successful
   if (res.ok) {

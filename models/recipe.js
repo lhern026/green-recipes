@@ -8,22 +8,21 @@ const recipeSchema = new Schema({
     ingredients: { type: String, required: true },
     instructions: { type: String, required: true },
     duration: {type: Number},
-    comments: [commentSchema]
-    
+
     
   }, {
     timestamps: true
   });
 
-const commentSchema = new Schema({
-  comment: String,
-  user: {type: Schema.Types.ObjectId, ref: 'User'},
-  userName: String,
+// const commentSchema = new Schema({
+//   comment: String,
+//   user: {type: Schema.Types.ObjectId, ref: 'User'},
+//   userName: String,
   
     
-  }, {
-    timestamps: true
-  });
+//   }, {
+//     timestamps: true
+//   });
 
 
 
