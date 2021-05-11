@@ -13,8 +13,9 @@ export default function LandingPage({ setUser }) {
       </div>
       <br />
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione magni cum illo porro totam, amet quod quasi eveniet aut nostrum culpa! Perferendis deleniti optio voluptatem deserunt ex porro quibusdam unde.</p>
-      <br /><br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, ullam. Accusantium voluptatum provident, quo asperiores ipsum harum tenetur nihil magnam, quasi in quia? Necessitatibus aliquam maxime aperiam eveniet quasi quisquam.<br /><br />Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus cupiditate laudantium doloremque, incidunt, saepe eligendi at eum vero possimus quod repudiandae ratione voluptas qui rem harum nisi officiis eveniet. In.<br /><br />Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti repellendus labore laboriosam sed facilis omnis consectetur, possimus consequuntur a odit, debitis aliquam hic illo earum sunt tenetur. Debitis, voluptatem ea.<br />
-      <br /><br />Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem dolorem mollitia, exercitationem ut deleniti ipsam debitis facilis velit harum expedita alias nemo beatae fuga provident voluptatibus. Fugit iure dicta consequuntur.<br /><br /><br /><br />
+      <br /><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, sed quidem ducimus explicabo at nisi magni, earum tempore quos optio vero sequi, fuga ipsa libero. Iure perferendis dolores vel incidunt?</p>
+      <br /><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat unde quae perspiciatis incidunt veniam, accusamus, delectus voluptatibus officia voluptas fugiat quasi, sed obcaecati commodi. Veritatis fuga inventore vel quaerat quae.</p>
+      
       <button onClick={() => setShowLogin(!showLogin)}>{showLogin ? 'Sign Up': 'Log In'}</button>
       {showLogin ? <LoginForm setUser={setUser} /> : <SignUpForm setUser={setUser} />}
     </main>

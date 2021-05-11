@@ -1,8 +1,18 @@
 p {
-  color: black;
+  color: #c99da3;
+  font-size: 3rem;
 }
-.cont1 {
-  background-color: red;
-  height: 30vh;
-  padding: 10%;
+.landing {
+  background-color: #36382e;
+  height: 0vh;
+  padding: 11%;
+
+  border-radius: 99%;
+}
+h1 {
+  font-size: 5rem;
+  color: #99e1d9;
+}
+p {
+  font-size: 3rem;
 }
