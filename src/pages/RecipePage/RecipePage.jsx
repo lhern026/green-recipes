@@ -1,12 +1,16 @@
-import { useState } from 'react';
+import { useEffect } from 'react';
 import * as userService from '../../utilities/users-service';
+import * as recipesAPI from '../../utilities/recipes-api';
 
 export default function RecipePage({recipes,setRecipes}) {
+  useEffect(function(){
+    async function getRecipes(){
+      const recipes = await recipesAPI.getAll();
+      setRecipes(recipes);
+    }
+    getRecipes();
+  },[]);
   
-  async function handleAddRecipe(){
-    
-    
-  }
   
   return (
     <>

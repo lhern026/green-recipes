@@ -9,6 +9,7 @@ export default function RecipeForm({handleAddRecipe}){
         ingredients: '',
         instructions:'',
         duration:''
+        //
     })
     function handleChange(evt){
         setInput({ ...input, [evt.target.name]: evt.target.value });

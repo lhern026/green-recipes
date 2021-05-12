@@ -1,4 +1,9 @@
+import sendRequest from './send-request';
 const BASE_URL = '/api/recipes';
+
+export function getAll(){
+  return sendRequest(BASE_URL);
+}
 
 export async function sendRecipe(formData) {
   // Fetch uses an options object as a second arg to make requests
