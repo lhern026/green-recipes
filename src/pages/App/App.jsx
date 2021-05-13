@@ -28,7 +28,7 @@ const [recipes,setRecipes]=useState([]);
           
           <Switch>
             <Route path="/recipes/new">
-              <NewRecipePage input={input} setInput={setInput}/>
+              <NewRecipePage input={input} setInput={setInput} recipes={recipes} setRecipes={setRecipes}/>
             </Route>
             <Route path="/recipes">
               <RecipePage recipes={recipes} setRecipes={setRecipes}/>

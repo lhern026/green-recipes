@@ -15,20 +15,12 @@ export default function RecipeForm({handleAddRecipe}){
         setInput({ ...input, [evt.target.name]: evt.target.value });
 
     }
-    async function handleSubmit(evt) {
+    function handleSubmit(evt) {
         // Prevent form from being submitted to the server
         
         evt.preventDefault();
         
-        try{
-            const formData = {...input}
-            
-            const recipe = await sendRecipe(formData)
-            console.log(recipe);
-
-        } catch{
-
-        }
+        handleAddRecipe(input);
         
       }
     return(

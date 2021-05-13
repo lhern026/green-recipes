@@ -14,8 +14,9 @@ async function getAll(req, res){
     console.log(recipes);
 }
 async function create(req, res) {
-    console.log(req.user);
+   req.body.user = req.user._id;
     try {
+        
         const recipe = await Recipe.create(req.body);
         
         // Yes, we can send back a simple string

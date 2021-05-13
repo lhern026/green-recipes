@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import * as userService from '../../utilities/users-service';
 import * as recipesAPI from '../../utilities/recipes-api';
+import RecipeForm from '../../components/RecipeForm/RecipeForm';
 
 export default function RecipePage({recipes,setRecipes}) {
   useEffect(function(){
@@ -9,13 +10,17 @@ export default function RecipePage({recipes,setRecipes}) {
       setRecipes(recipes);
     }
     getRecipes();
+    
   },[]);
-  
   
   return (
     <>
-      <h1>List of recipes</h1>
+      <h1>{recipes.ingredients}</h1>
         <div>
+        {recipes.ingredients}
+          
+        
+      
         </div>
                 
       
