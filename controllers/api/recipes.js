@@ -3,7 +3,8 @@ const Recipe =  require('../../models/recipe')
 
 module.exports = {
     create,
-    getAll
+    getAll,
+    removeRecipe
   };
   
 async function getAll(req, res){
@@ -27,3 +28,11 @@ async function create(req, res) {
         res.status(400).json(err);
     }
     }
+
+    async function removeRecipe(req, res) {
+        await Recipe.findOneAndDelete(
+          { _id: req.params.id }, 
+          (err, recipe) => recipe && err
+        );
+        res.json('');
+      }

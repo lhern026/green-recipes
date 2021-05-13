@@ -22,7 +22,7 @@ app.use(require('./config/checkToken'));
 // Put API routes here, before the "catch all" route
 app.use('/api/users', require('./routes/api/users'));
 //protected routes
-app.use('/api/recipes', require('./routes/api/recipes'));
+app.use('/api/recipes', ensureLoggedIn,require('./routes/api/recipes'));
 
 
 // The following "catch all" route (note the *) is necessary

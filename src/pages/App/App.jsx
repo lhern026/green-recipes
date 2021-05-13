@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import { getUser } from '../../utilities/users-service';
-
+import 'bootstrap/dist/css/bootstrap.min.css'
 import LandingPage from '../LandingPage/LandingPage';
-
+import * as recipesAPI from '../../utilities/recipes-api';
 
 import NavBar from '../../components/NavBar/NavBar';
 import './App.css';
@@ -19,6 +19,12 @@ export default function App() {
     duration:''
 })
 const [recipes,setRecipes]=useState([]);
+async function handleRemoveRecipe(id) {
+  await recipesAPI.removeRecipe(id);
+  const recipesIndex = await recipesAPI.getAll();
+  setRecipes(recipesIndex);
+}
+
   
   return (
     <main className="App">
@@ -28,10 +34,10 @@ const [recipes,setRecipes]=useState([]);
           
           <Switch>
             <Route path="/recipes/new">
-              <NewRecipePage input={input} setInput={setInput} recipes={recipes} setRecipes={setRecipes}/>
+              <NewRecipePage input={input} setInput={setInput} recipes={recipes} setRecipes={setRecipes} handleRemoveRecipe={handleRemoveRecipe}/>
             </Route>
             <Route path="/recipes">
-              <RecipePage recipes={recipes} setRecipes={setRecipes}/>
+              <RecipePage recipes={recipes} setRecipes={setRecipes} handleRemoveRecipe={handleRemoveRecipe}/>
             </Route>
             
             <Redirect to="/recipes" />

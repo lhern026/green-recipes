@@ -1,12 +1,12 @@
 body {
   margin: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 /* CSS Custom Properties */
@@ -33,7 +33,7 @@ a {
 
 body {
   margin: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #001514;
@@ -111,12 +111,7 @@ form {
   gap: 1.25vmin;
   color: var(--text-light);
   position: relative;
-  
 }
-.form-container{
-
-}
-
 label {
   font-size: 2vmin;
   display: flex;

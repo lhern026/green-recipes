@@ -3,8 +3,9 @@ import * as userService from '../../utilities/users-service';
 import * as recipesAPI from '../../utilities/recipes-api';
 import RecipeForm from '../../components/RecipeForm/RecipeForm';
 import RecipeItem from  '../../components/RecipeItem/RecipeItem';
+import './RecipePage.css'
 
-export default function RecipePage({recipes,setRecipes}) {
+export default function RecipePage({recipes,setRecipes,handleRemoveRecipe}) {
   useEffect(function(){
     async function getRecipes(){
       const recipes = await recipesAPI.getAll();
@@ -15,8 +16,10 @@ export default function RecipePage({recipes,setRecipes}) {
     
   },[]);
   
+  
   return (
     <>
+      
       <h1>recipes</h1>
       <table className="table">
         <thead>
@@ -25,6 +28,7 @@ export default function RecipePage({recipes,setRecipes}) {
             <th>ingredients</th>
             <th>instructions</th>
             <th>duration</th>
+            <th>delete(;</th>
           </tr>
         </thead>
         <tbody>
@@ -35,6 +39,7 @@ export default function RecipePage({recipes,setRecipes}) {
             ingredients={r.ingredients}
             instructions = {r.instructions}
             duration  ={r.duration}
+            handleRemoveRecipe= {handleRemoveRecipe}
           /> )}
         </tbody>
       </table>
