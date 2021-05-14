@@ -7,7 +7,9 @@ export function getAll(){
 export function removeRecipe(id) {
   return sendRequest(`${BASE_URL}/${id}`, 'DELETE');
 }
-
+export function updateRecipe(id){
+  return sendRequest(`${BASE_URL}/recipes/${id}`, 'POST');
+}
 export function add(formData) {
   // Fetch uses an options object as a second arg to make requests
   // other than basic GET requests, include data, headers, etc. 

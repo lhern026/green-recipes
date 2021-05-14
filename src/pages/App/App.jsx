@@ -24,6 +24,11 @@ async function handleRemoveRecipe(id) {
   const recipesIndex = await recipesAPI.getAll();
   setRecipes(recipesIndex);
 }
+async function handleUpdateRecipe(id){
+  await recipesAPI.updateRecipe(id);
+  const recipesIndex = await recipesAPI.getAll();
+  setRecipes(recipesIndex)
+}
 
   
   return (
@@ -34,10 +39,10 @@ async function handleRemoveRecipe(id) {
           
           <Switch>
             <Route path="/recipes/new">
-              <NewRecipePage input={input} setInput={setInput} recipes={recipes} setRecipes={setRecipes} handleRemoveRecipe={handleRemoveRecipe}/>
+              <NewRecipePage input={input} setInput={setInput} recipes={recipes} setRecipes={setRecipes} handleRemoveRecipe={handleRemoveRecipe} handleUpdateRecipe={handleUpdateRecipe}/>
             </Route>
             <Route path="/recipes">
-              <RecipePage recipes={recipes} setRecipes={setRecipes} handleRemoveRecipe={handleRemoveRecipe}/>
+              <RecipePage recipes={recipes} setRecipes={setRecipes} handleRemoveRecipe={handleRemoveRecipe} handleUpdateRecipe={handleUpdateRecipe}/>
             </Route>
             
             <Redirect to="/recipes" />

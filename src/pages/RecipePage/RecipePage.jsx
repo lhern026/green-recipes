@@ -5,7 +5,7 @@ import RecipeForm from '../../components/RecipeForm/RecipeForm';
 import RecipeItem from  '../../components/RecipeItem/RecipeItem';
 import './RecipePage.css'
 
-export default function RecipePage({recipes,setRecipes,handleRemoveRecipe}) {
+export default function RecipePage({recipes,setRecipes,handleRemoveRecipe,handleUpdateRecipe}) {
   useEffect(function(){
     async function getRecipes(){
       const recipes = await recipesAPI.getAll();
@@ -29,6 +29,7 @@ export default function RecipePage({recipes,setRecipes,handleRemoveRecipe}) {
             <th>instructions</th>
             <th>duration</th>
             <th>delete(;</th>
+            <th>update(;</th>
           </tr>
         </thead>
         <tbody>
@@ -40,6 +41,7 @@ export default function RecipePage({recipes,setRecipes,handleRemoveRecipe}) {
             instructions = {r.instructions}
             duration  ={r.duration}
             handleRemoveRecipe= {handleRemoveRecipe}
+            handleUpdateRecipe = {handleUpdateRecipe}
           /> )}
         </tbody>
       </table>
