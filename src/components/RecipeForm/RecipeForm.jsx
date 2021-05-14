@@ -25,7 +25,7 @@ export default function RecipeForm({handleAddRecipe}){
       }
     return(
         <>
-        <div >
+        <div  >
             <form autoComplete="off"  onSubmit={handleSubmit}>
                 <label>Recipe</label>
                 <input type="text" name="recipe" value={input.recipe}  onChange={handleChange} required />

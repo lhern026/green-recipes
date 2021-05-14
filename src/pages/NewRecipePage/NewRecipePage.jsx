@@ -2,6 +2,7 @@ import RecipeForm from '../../components/RecipeForm/RecipeForm';
 import { useEffect } from 'react';
 import * as userService from '../../utilities/users-service';
 import * as recipesAPI from '../../utilities/recipes-api';
+import Anime from 'react-anime';
 
 
 
@@ -13,6 +14,9 @@ export default function NewRecipePage({input, recipes,setRecipes,handleRemoveRec
   
   return(
     <>
+    <Anime rotate={['-5']} translateY={[200]} easing={['linear']}>
+    <h1>submit ur recipes(;</h1>
+      </Anime>
     <br /><br /><br /><br /><br /><br /><br />
     <RecipeForm input={input} handleAddRecipe={handleAddRecipe} handleRemoveRecipe={handleRemoveRecipe} />
 </>)
