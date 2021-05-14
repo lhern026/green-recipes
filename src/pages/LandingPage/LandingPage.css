@@ -4,6 +4,7 @@ p {
 }
 .landing {
   background-color: #36382e;
+  border-radius: 80%;
   height: 10vh;
   padding: 11%;
 }
@@ -14,4 +15,19 @@ h1 {
 }
 p {
   font-size: 4rem;
+}
+.cont1 {
+  background: linear-gradient(#744446, #254441);
+  border-radius: 50%;
+}
+.landingP {
+  background: linear-gradient(black, #254441);
+  border-radius: 90%;
+}
+.forThose {
+  background: linear-gradient(#744446, #254441);
+  border-radius: 10%;
+}
+p {
+  border: 0.01px dotted #99e1d9;
 }
