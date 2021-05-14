@@ -8,6 +8,10 @@ body {
 code {
   font-family: "Lato", sans-serif;
 }
+button:hover {
+  background: #24423f;
+  height: 10vh;
+}
 
 /* CSS Custom Properties */
 :root {
