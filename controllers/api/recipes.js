@@ -46,12 +46,4 @@ async function create(req, res) {
         res.json('');
       }
 
-      function updateRecipe(req,res){
-    await Recipe.findOne({'recipes._id': req.params.id}).then(function(recipe){
-        let recipes = recipe.recipes.id(req.params.id);
-        Object.assign(recipe, req.body);
-        recipe.save(function(err){
-            res.redirect(`/recipes/${recipe._id}`);
-        })
-    })
-}
+  
