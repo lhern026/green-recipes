@@ -9,8 +9,13 @@ nav {
 }
 nav a:hover {
   color: #744446;
+  background: linear-gradient(#206f67, #81dad0);
+  height: 1.3vh;
 }
 span:hover {
   background: linear-gradient(#206f67, #81dad0);
-  height: 1vh;
+  height: 1.3vh;
+}
+td {
+  border: 0.3rem solid black;
 }

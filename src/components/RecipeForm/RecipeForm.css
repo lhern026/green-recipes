@@ -3,6 +3,7 @@
 }
 label {
   font-size: xx-large;
+  background: linear-gradient(rgb(49, 49, 49), black);
 }
 input {
   width: 80vw;

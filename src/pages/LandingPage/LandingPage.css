@@ -12,9 +12,11 @@ h1 {
   font-size: 5rem;
   color: #99e1d9;
   margin-bottom: 15%;
+  letter-spacing: 0.6ch;
 }
 p {
   font-size: 4rem;
+  letter-spacing: 0.3ch;
 }
 .cont1 {
   background: linear-gradient(#744446, #254441);
@@ -30,4 +32,10 @@ p {
 }
 p {
   border: 0.01px dotted #99e1d9;
+}
+.emoji {
+  background: linear-gradient(black, green);
+  font-size: xx-large;
+  padding: 1%;
+  border-radius: 100%;
 }

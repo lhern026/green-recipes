@@ -1,9 +1,15 @@
 .cont {
-  background: url("https://i.imgur.com/UPEDcUF.jpg");
+  background: url("https://i.imgur.com/Q4fbMVy.jpg");
   background-size: cover;
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
+  overflow: auto;
+  color: #30334a;
+  letter-spacing: 0.8ch;
+}
+.cont:hover {
+  background: #d0f1ed;
 }
 body {
   background-color: #99e1d9;
