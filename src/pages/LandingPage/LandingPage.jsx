@@ -22,7 +22,7 @@ export default function LandingPage({ setUser }) {
       <Anime translateX={[-150]} duration={[1000]} scale={[0.8]}>
       <p className="forThose">For those who prefer consuming their medicine in the form of an edible arrangement❤️ and want to store it somewhere safe <Anime translateX={[350]} duration={[2000]}  translateY={[-100]} rotate={['6turn']} delay={[3000]}><span className="emoji">😏</span></Anime></p></Anime>
       
-      <Anime translateY={[50]} delay={[4700]}  duration={[1000]} scale={[1.06]}>
+      <Anime translateY={[50]} delay={[5700]}  duration={[1000]} scale={[1.06]}>
       <p>Please sign up or login returning user💙</p>
       <button onClick={() => setShowLogin(!showLogin)}>{showLogin ? 'Sign Up': 'Log In'}</button>
       {showLogin ? <LoginForm setUser={setUser} /> : <SignUpForm setUser={setUser} />}</Anime>

@@ -11,6 +11,7 @@
 .cont:hover {
   background: #d0f1ed;
   color: white;
+  transition-delay: 0.5s;
 }
 body {
   background-color: #99e1d9;

@@ -178,3 +178,6 @@ span {
   color: #c99da3;
   font-size: x-large;
 }
+.input {
+  width: 60vw;
+}
