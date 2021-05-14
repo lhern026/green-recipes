@@ -7,3 +7,10 @@ nav {
   padding: 2%;
   align-content: center;
 }
+nav a:hover {
+  color: #744446;
+}
+span:hover {
+  background: linear-gradient(#206f67, #81dad0);
+  height: 1vh;
+}
