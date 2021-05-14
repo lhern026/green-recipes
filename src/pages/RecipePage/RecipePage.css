@@ -11,8 +11,12 @@ body {
 .rows {
   font-size: xx-large;
   color: #99e1d9;
+  background-color: black;
 }
 .body {
   font-size: x-large;
   color: #c1c4d7;
+}
+nav {
+  background: linear-gradient(red, black);
 }

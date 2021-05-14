@@ -1,0 +1,11 @@
+.newRecipeForm {
+  width: 100%;
+}
+label {
+  font-size: xx-large;
+}
+input {
+  width: 80vw;
+  color: white;
+  font-size: xx-large;
+}

@@ -45,8 +45,10 @@ async function handleUpdateRecipe(id){
               <RecipePage recipes={recipes} setRecipes={setRecipes} handleRemoveRecipe={handleRemoveRecipe} handleUpdateRecipe={handleUpdateRecipe}/>
             </Route>
             
+            
             <Redirect to="/recipes" />
           </Switch>
+          <NavBar user={user} setUser={setUser} />
         </>
         :
         <LandingPage setUser={setUser} user={user}  />

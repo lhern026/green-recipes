@@ -1,0 +1,9 @@
+.nav a {
+  text-decoration: none;
+  color: #d5573b;
+  font-size: xx-large;
+}
+nav {
+  padding: 2%;
+  align-content: center;
+}

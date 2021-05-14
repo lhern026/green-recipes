@@ -4,7 +4,7 @@ p {
 }
 .landing {
   background-color: #36382e;
-  height: 0vh;
+  height: 10vh;
   padding: 11%;
 }
 h1 {
@@ -13,5 +13,5 @@ h1 {
   margin-bottom: 15%;
 }
 p {
-  font-size: 3rem;
+  font-size: 4rem;
 }

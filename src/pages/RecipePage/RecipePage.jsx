@@ -21,19 +21,19 @@ export default function RecipePage({recipes,setRecipes,handleRemoveRecipe,handle
   return (
     <>
     <div className="cont">
-      <Anime rotate={['5']} translateY={[200]} easing={['linear']}>
-      <h1>recipes</h1>
+      <Anime rotate={['5']} translateY={[100]} easing={['linear']}>
+      <h1 >Recipes</h1>
       </Anime>
       <table className="table">
         <thead>
           <tr className='rows'>
           
-            <th>recipe</th>
-            <th>ingredients</th>
-            <th>instructions</th>
-            <th>duration</th>
-            <th>delete</th>
-            <th>update</th>
+            <th>Recipe</th>
+            <th>Ingredients</th>
+            <th>Instructions</th>
+            <th>Duration in Minutes</th>
+            <th>Delete</th>
+            <th>Update</th>
             
           </tr>
         </thead>

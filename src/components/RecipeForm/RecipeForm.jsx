@@ -1,5 +1,6 @@
 import {  useState } from "react";
 import { sendRecipe} from "../../utilities/recipes-service";
+import './RecipeForm.css'
 
 
 export default function RecipeForm({handleAddRecipe}){
@@ -26,15 +27,15 @@ export default function RecipeForm({handleAddRecipe}){
     return(
         <>
         <div  >
-            <form autoComplete="off"  onSubmit={handleSubmit}>
+            <form autoComplete="off"  onSubmit={handleSubmit} className="newRecipeForm">
                 <label>Recipe</label>
-                <input type="text" name="recipe" value={input.recipe}  onChange={handleChange} required />
+                <input classname="newInput" type="text" name="recipe" value={input.recipe}  onChange={handleChange} required />
                 <label>Ingredients</label>
-                <input type="text" name="ingredients" value={input.ingredients} onChange={handleChange}  required />
+                <input classname="newInput" type="text" name="ingredients" value={input.ingredients} onChange={handleChange}  required />
                 <label>Instructions</label>
-                <input type="text" name="instructions"  value={input.instructions} onChange={handleChange}  required />
+                <input classname="newInput"  type="text" name="instructions"  value={input.instructions} onChange={handleChange}  required />
                 <label>Duration in minutes</label>
-                <input type="number" name="duration" value={input.duration} onChange={handleChange}  required />
+                <input  classname="newInput" type="number" name="duration" value={input.duration} onChange={handleChange}  required />
                 
                 <button type="submit">Submit</button>
         </form>
