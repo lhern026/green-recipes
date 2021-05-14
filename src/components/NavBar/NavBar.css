@@ -10,11 +10,14 @@ nav {
 nav a:hover {
   color: #744446;
   background: linear-gradient(#206f67, #81dad0);
-  height: 1.3vh;
+  height: 1vh;
+  transition: all 0.99s ease;
+  border-radius: 80%;
 }
 span:hover {
   background: linear-gradient(#206f67, #81dad0);
   height: 1.3vh;
+  transition: all 0.99s ease;
 }
 td {
   border: 0.3rem solid black;

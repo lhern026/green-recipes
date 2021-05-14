@@ -15,7 +15,7 @@ export default function NewRecipePage({input, recipes,setRecipes,handleRemoveRec
   
   return(
     <>
-    <Anime rotate={['-5']} translateY={[100]} easing={['linear']}>
+    <Anime rotate={['-1']} translateY={[50]} easing={['linear']}>
     <h1 className="newRecipe">Please store your recipes</h1>
       </Anime>
     <br /><br /><br /><br /><br /><br /><br />

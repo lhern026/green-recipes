@@ -3,7 +3,7 @@ p {
   font-size: 3rem;
 }
 .landing {
-  background-color: #36382e;
+  background-color: #535840;
   border-radius: 80%;
   height: 10vh;
   padding: 11%;
@@ -42,4 +42,8 @@ p {
   font-size: xx-large;
   padding: 1%;
   border-radius: 100%;
+}
+.hover {
+  background: linear-gradient(black, grey);
+  width: 70vw;
 }

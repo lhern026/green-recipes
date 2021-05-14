@@ -4,6 +4,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+body:before,
+body:after {
+  content: "";
+  position: fixed;
+  background: #43c7b7;
+  left: 0;
+  right: 0;
+  height: 0.3rem;
+}
 
 code {
   font-family: "Lato", sans-serif;
