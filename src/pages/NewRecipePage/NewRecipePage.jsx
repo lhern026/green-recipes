@@ -5,8 +5,6 @@ import * as recipesAPI from '../../utilities/recipes-api';
 import Anime from 'react-anime';
 import './NewRecipePage.css'
 
-
-
 export default function NewRecipePage({input, recipes,setRecipes,handleRemoveRecipe}) {
   async function handleAddRecipe(recipeData){
     const recipe = await recipesAPI.add(recipeData);

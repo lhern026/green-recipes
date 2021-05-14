@@ -16,12 +16,10 @@ export default function RecipePage({recipes,setRecipes,handleRemoveRecipe,handle
     getRecipes();
     
   },[]);
-  
-  
-  return (
+   return (
     <>
     <div >
-      <Anime rotate={['5']} translateY={[100]} easing={['linear']} >
+      <Anime rotate={['2']} translateY={[.5]} easing={['linear']} >
       <h1 className="cont" >Recipes</h1>
       </Anime>
       <table className="table">

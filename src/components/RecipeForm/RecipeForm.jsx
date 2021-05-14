@@ -1,8 +1,5 @@
 import {  useState } from "react";
-import { sendRecipe} from "../../utilities/recipes-service";
 import './RecipeForm.css'
-
-
 export default function RecipeForm({handleAddRecipe}){
     
      const [input,setInput] = useState({
@@ -36,7 +33,6 @@ export default function RecipeForm({handleAddRecipe}){
                 <input classname="newInput"  type="text" name="instructions"  value={input.instructions} onChange={handleChange}  required />
                 <label>Duration in minutes</label>
                 <input  classname="newInput" type="number" name="duration" value={input.duration} onChange={handleChange}  required />
-                
                 <button type="submit">Submit</button>
         </form>
         </div>

@@ -7,9 +7,7 @@ export default function RecipeItem({key,id,recipeName,ingredients,instructions,d
         <>
         
             <tr className="recipeItemRow">
-            
                 <td >{recipeName}</td>
-            
                 <td>{ingredients}</td>
                 <td>{instructions}</td>
                 <td >{duration}</td>

@@ -4,7 +4,6 @@ import { getUser } from '../../utilities/users-service';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import LandingPage from '../LandingPage/LandingPage';
 import * as recipesAPI from '../../utilities/recipes-api';
-
 import NavBar from '../../components/NavBar/NavBar';
 import './App.css';
 import RecipePage from '../RecipePage/RecipePage';
