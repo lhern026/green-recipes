@@ -31,9 +31,9 @@ export default function RecipePage({recipes,setRecipes,handleRemoveRecipe,handle
             <th>Recipe</th>
             <th>Ingredients</th>
             <th>Instructions</th>
-            <th>Duration in Minutes</th>
+            <th className='duration'>Duration in Minutes</th>
             <th>Delete</th>
-            <th>Update</th>
+            <th className='demon'>😈</th>
             
           </tr>
         </thead>
