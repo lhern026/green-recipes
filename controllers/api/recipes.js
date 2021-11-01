@@ -13,7 +13,7 @@ async function getAll(req, res){
         user: req.user._id //user centric
     });
     res.json(recipes)
-    console.log(recipes);
+    
 }
 async function create(req, res) {
    req.body.user = req.user._id;
